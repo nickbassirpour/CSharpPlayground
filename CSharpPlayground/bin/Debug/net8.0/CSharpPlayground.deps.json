@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CSharpPlayground/1.0.0": {
+        "dependencies": {
+          "CSharpMethods": "1.0.0"
+        },
+        "runtime": {
+          "CSharpPlayground.dll": {}
+        }
+      },
+      "CSharpMethods/1.0.0": {
+        "runtime": {
+          "CSharpMethods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSharpPlayground/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
