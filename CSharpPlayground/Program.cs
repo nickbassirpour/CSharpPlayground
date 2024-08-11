@@ -26,7 +26,7 @@ do
             goodDataType = true;
             break;
         case "number":
-            Console.WriteLine("Cannot use that one yet.");
+            NumberPrompt.NumberPrompts();
             break;
         default:
             Console.WriteLine("That was not a correct data type.");

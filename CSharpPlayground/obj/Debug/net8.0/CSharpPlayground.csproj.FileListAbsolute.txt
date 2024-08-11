@@ -16,3 +16,4 @@ C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpPlayground\bin\Debug\net8.
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpPlayground\bin\Debug\net8.0\CSharpMethods.pdb
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpPlayground\obj\Debug\net8.0\CSharpPlayground.csproj.AssemblyReference.cache
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpPlayground\obj\Debug\net8.0\CSharpPl.B4C907DF.Up2Date
+C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpPlayground\obj\Debug\net8.0\CSharpPlayground.sourcelink.json

@@ -9,3 +9,4 @@ C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpMethods\obj\Debug\net8.0\C
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpMethods\obj\Debug\net8.0\refint\CSharpMethods.dll
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpMethods\obj\Debug\net8.0\CSharpMethods.pdb
 C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpMethods\obj\Debug\net8.0\ref\CSharpMethods.dll
+C:\Users\nickb\source\repos\CSharpPlaygroundApp\CSharpMethods\obj\Debug\net8.0\CSharpMethods.sourcelink.json
