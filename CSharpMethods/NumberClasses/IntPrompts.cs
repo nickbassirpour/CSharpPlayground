@@ -50,6 +50,8 @@ namespace CSharpMethods.NumberClasses
             } while (twoNumbers == false || badNumbersList.Count > 0);
 
             Console.WriteLine($"The sum of your numbers is: {IntMethods.AddInts(numbersList)}");
+            Console.WriteLine($"The difference of your numbers is: {IntMethods.SubtractInts(numbersList)}");
+
         }
     }
 }

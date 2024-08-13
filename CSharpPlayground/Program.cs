@@ -17,7 +17,7 @@ bool goodDataType = false;
 
 do
 {
-    Console.WriteLine($"Which data type do you want to see ({ String.Join(", ", dataTypes)}): ");
+    Console.WriteLine($"Which data type do you want to see ({ String.Join(", ", dataTypes)}, or end to close program): ");
     string dataType = Console.ReadLine();
     switch (dataType)
     {
@@ -27,6 +27,9 @@ do
             break;
         case "number":
             NumberPrompt.NumberPrompts();
+            break;
+        case "end":
+            Environment.Exit(0);
             break;
         default:
             Console.WriteLine("That was not a correct data type.");
