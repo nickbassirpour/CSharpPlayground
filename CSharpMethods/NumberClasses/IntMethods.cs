@@ -19,5 +19,10 @@ namespace CSharpMethods.NumberClasses
             return Math.Abs(numbers[0] - numbers[1]);
 
         }
+
+        public static int MultiplyInts(List<int> numbers)
+        {
+            return numbers[0] * numbers[1];
+        }
     }
 }
