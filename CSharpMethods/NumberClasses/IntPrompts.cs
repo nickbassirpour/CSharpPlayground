@@ -52,6 +52,7 @@ namespace CSharpMethods.NumberClasses
             Console.WriteLine($"The sum of your numbers is: {IntMethods.AddInts(numbersList)}");
             Console.WriteLine($"The difference of your numbers is: {IntMethods.SubtractInts(numbersList)}");
             Console.WriteLine($"Your numbers multiplied is: {IntMethods.MultiplyInts(numbersList)}");
+            Console.WriteLine($"Your numbers divided is: {IntMethods.DivideInts(numbersList)}");
 
         }
     }

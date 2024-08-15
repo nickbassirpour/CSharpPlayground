@@ -24,5 +24,12 @@ namespace CSharpMethods.NumberClasses
         {
             return numbers[0] * numbers[1];
         }
+
+        public static string DivideInts(List<int> numbers)
+        {
+            decimal remainder = numbers[0] % numbers[1];
+            int quotient = numbers[0] / numbers[1];
+            return $"{quotient} with a remainder of {remainder}";
+        }
     }
 }
