@@ -18,6 +18,9 @@ namespace CSharpMethods
                 case "ints":
                     IntPrompts.IntPrompt();
                     break;
+                case "floats":
+                    FloatPrompts.FloatPrompt(); 
+                    break;
                 default:
                     break;
             }

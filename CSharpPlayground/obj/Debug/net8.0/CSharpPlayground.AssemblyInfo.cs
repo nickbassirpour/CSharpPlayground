@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpPlayground")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93e1b298bfed4b7d0c954c335a1c1fc1814115ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f342cee292e94162f1553be4704f6e16cbf18f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpPlayground")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpPlayground")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
