@@ -8,16 +8,24 @@ namespace CSharpMethods.NumberClasses
 {
     public class FloatMethods
     {
-        public static float AddFloats(string floatString)
+
+        public static List<float> TurnFloatIntoList(string floatString)
         {
             var floatsStringEnum = (from fs in floatString.Split()
-                              select fs);
+                                    select fs);
             List<string> floatsStringList = floatsStringEnum.ToList();
             List<float> floatsList = floatsStringList.Select(float.Parse).ToList();
 
-            float floatSum = floatsList.Sum();
+            return floatsList;
+        }
+        public static float AddFloats(List<float> floatsList)
+        {
+            return floatsList.Sum();
+        }
 
-            return floatSum;
+        public static float AverageFloats(List<float> floatsList)
+        {
+            return floatsList.Average();
         }
     }
 }
