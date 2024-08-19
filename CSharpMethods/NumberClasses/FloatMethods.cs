@@ -31,7 +31,7 @@ namespace CSharpMethods.NumberClasses
             {
                 return ("tooManyFloats", floatsStringList);
             }
-
+            
             return ("good", floatsStringList);
         }
         public static List<float> TurnFloatIntoList(List<string> floatsStringList)
@@ -45,6 +45,7 @@ namespace CSharpMethods.NumberClasses
 
         public static float AverageFloats(List<float> floatsList)
         {
+            // Am I taking OOP too far? 
             return floatsList.Average();
         }
     }
