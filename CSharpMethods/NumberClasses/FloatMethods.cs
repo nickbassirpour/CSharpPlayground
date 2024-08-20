@@ -48,5 +48,13 @@ namespace CSharpMethods.NumberClasses
             // Am I taking OOP too far? 
             return floatsList.Average();
         }
+
+        public static float? MedianFloat(List<float> floatsList)
+        {
+            int count = floatsList.Count();
+            if (count % 2 == 0) return null;
+            int midpoint = count / 2;
+            return floatsList.OrderBy(n => n).ElementAt(midpoint);
+        }
     }
 }

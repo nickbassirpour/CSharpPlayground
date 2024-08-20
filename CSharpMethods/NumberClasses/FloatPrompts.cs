@@ -52,6 +52,17 @@ namespace CSharpMethods.NumberClasses
             Console.WriteLine($"The sum of your numbers is {floatSum}");
             float floatAvg = FloatMethods.AverageFloats(floatsList);
             Console.WriteLine($"The average of your numbers is {floatAvg}");
+            float? floatMedian = FloatMethods.MedianFloat(floatsList);
+            if (floatMedian != null)
+            {
+                Console.WriteLine($"The median of your numbers is {floatMedian}");
+            }
+            else
+            {
+                Console.WriteLine("There is no midpoint since the count is even");
+            }
+            
+
 
             Console.WriteLine();
         }
