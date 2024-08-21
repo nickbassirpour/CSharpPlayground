@@ -51,6 +51,8 @@ namespace CSharpMethods.NumberClasses
 
         public static float? MedianFloat(List<float> floatsList)
         {
+            // This method makes more sense to abstract because it has more 
+            // than one line of logic. The others can all be abstracted
             int count = floatsList.Count();
             if (count % 2 == 0) return null;
             int midpoint = count / 2;
