@@ -16,36 +16,10 @@ namespace CSharpMethods.NumberClasses
 
             do
             {
-                Console.WriteLine("Please enter up to 10 floating point numbers (up to 6 places after the decimal) separated by a space.");
-                floatString = Console.ReadLine();
-                if (string.IsNullOrEmpty(floatString)) Console.WriteLine("You need to input at least one value.");
-
-                if (!string.IsNullOrEmpty(floatString)) {
-                    (result, floatsStringList) = FloatMethods.CheckStringOfFloats(floatString);
-                    if (result == "floatSizeError")
-                    {
-                        string floatSizeErrorMessage = floatsStringList.Count > 1 ?
-                            "These floats have too many decimals: "
-                            : "This float has too many decimals: ";
-                        Console.WriteLine(floatSizeErrorMessage);
-
-                        string badFloatStringList = string.Empty;
-                        for (int i = 0; i < floatsStringList.Count(); i++)
-                        {
-                            string ending = i >= 1 || floatsStringList.Count() == 1 ? "." : ", ";
-                            badFloatStringList += floatsStringList[i].Trim() + ending;
-                        }
-                        Console.WriteLine(badFloatStringList);
-                    }
-
-                    if (result == "tooManyFloats")
-                    {
-                        Console.WriteLine("You entered more than 10 values.");
-                    }
-                }
+               (floatString, result, floatsStringList) = FloatMethods.CheckFloatStringList();
             } while (string.IsNullOrEmpty(floatString) || result != "good");
             
-            List<float> floatsList = FloatMethods.TurnFloatIntoList(floatsStringList);
+            List<float> floatsList = FloatMethods.TurnIntoFloatList(floatsStringList);
             Console.WriteLine();
 
             float floatSum = FloatMethods.AddFloats(floatsList);
@@ -61,7 +35,8 @@ namespace CSharpMethods.NumberClasses
             {
                 Console.WriteLine("There is no midpoint since the count is even");
             }
-            
+            Console.WriteLine($"The biggest float is {floatsList.Max()}");
+            Console.WriteLine($"The smallest float is {floatsList.Min()}");
 
 
             Console.WriteLine();
