@@ -39,6 +39,7 @@ namespace CSharpMethods.NumberClasses
             Console.WriteLine($"The smallest float is {floatsList.Min()}");
 
             // I need a drink
+            // I hate CompTIA
             Console.WriteLine();
         }
     }
