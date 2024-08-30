@@ -56,7 +56,7 @@ namespace CSharpMethods.NumberClasses
 
             foreach (string floatStr in floatsStringList)
             {
-                if (floatStr.Contains(".") && floatStr.ToString().Split(".")[1].Length > 6)
+                if (floatStr.Contains(".") && !float.TryParse(floatStr, out float result) && floatStr.ToString().Split(".")[1].Length > 6)
                 {
                     floatSizeErrors.Add(floatStr);
                 }
