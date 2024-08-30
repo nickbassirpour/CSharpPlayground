@@ -37,7 +37,7 @@ namespace CSharpMethods.NumberClasses
             }
             Console.WriteLine($"The biggest float is {floatsList.Max()}");
             Console.WriteLine($"The smallest float is {floatsList.Min()}");
-            Console.WriteLine($"Your list of numbers double is {floatsList.ConvertAll(x => 2 * x)}");
+            Console.WriteLine($"Your list of numbers doubled is {String.Join(" ", floatsList.ConvertAll(x => 2 * x))}");
 
             Console.WriteLine();
         }

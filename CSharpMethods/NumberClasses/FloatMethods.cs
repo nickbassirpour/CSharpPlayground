@@ -21,6 +21,21 @@ namespace CSharpMethods.NumberClasses
             if (!string.IsNullOrEmpty(floatString))
             {
                 (result, floatsStringList) = FloatMethods.CheckEachString(floatString);
+                if (result == "notFloatError")
+                {
+                    string notFloatErrorMessage = floatsStringList.Count > 1 ?
+                        "These are not valid floats: "
+                        : "This is not a valid float: ";
+                    Console.WriteLine(notFloatErrorMessage);
+
+                    string notFloatErrorStringList = string.Empty;
+                    for (int i = 0; i < floatsStringList.Count; i++)
+                    {
+                        string ending = i >= 1 || floatsStringList.Count() == 1 ? "." : ",";
+                        notFloatErrorStringList += floatsStringList[i].Trim() + ending;
+                    }
+                    Console.WriteLine(notFloatErrorStringList);
+                }
                 if (result == "floatSizeError")
                 {
                     string floatSizeErrorMessage = floatsStringList.Count > 1 ?
@@ -51,18 +66,27 @@ namespace CSharpMethods.NumberClasses
                                     select fs);
 
             List<string> floatsStringList = floatsStringEnum.ToList();
-
+            List<string> notFloatErrorList = new List<string>();
             List<string> floatSizeErrors = new List<string>();
 
             foreach (string floatStr in floatsStringList)
             {
-                if (floatStr.Contains(".") && !float.TryParse(floatStr, out float result) && floatStr.ToString().Split(".")[1].Length > 6)
+                if (!float.TryParse(floatStr, out float result))
+                {
+                    notFloatErrorList.Add(floatStr);
+                }
+                if (notFloatErrorList.Count > 0) return ("notFloatError", notFloatErrorList);
+            }
+
+            foreach (string floatStr in floatsStringList)
+            {
+                if (floatStr.Contains(".") && floatStr.ToString().Split(".")[1].Length > 6)
                 {
                     floatSizeErrors.Add(floatStr);
                 }
+                if (floatSizeErrors.Count > 0) return ("floatSizeError", floatSizeErrors);
             }
-            if (floatSizeErrors.Count > 0) return ("floatSizeError", floatSizeErrors);
-            
+
             if (floatsStringList.Count > 10)
             {
                 return ("tooManyFloats", floatsStringList);
