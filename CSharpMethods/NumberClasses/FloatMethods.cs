@@ -54,7 +54,7 @@ namespace CSharpMethods.NumberClasses
 
                 if (result == "tooManyFloats")
                 {
-                    Console.WriteLine("You entered more than 10 values.");
+                    Console.WriteLine("You entered more than 10 values!");
                 }
             }
             return (floatString, result, floatsStringList);
